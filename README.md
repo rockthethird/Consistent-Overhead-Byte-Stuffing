@@ -1,2 +1,2 @@
-# Consistent-Overhead-Byte-Stuffing
-Consistent Overhead Byte Stuffing (COBS) is an algorithm for encoding data bytes that results in efficient, reliable, unambiguous packet framing regardless of packet content.
+<h1>Consistent Overhead Byte Stuffing in C#</h1>
+[Consistent Overhead Byte Stuffing](http://en.wikipedia.org/wiki/Consistent_Overhead_Byte_Stuffing) (COBS) is an algorithm for encoding data bytes that results in efficient, reliable, unambiguous packet framing regardless of packet content, thus making it easy for receiving applications to recover from malformed packets. It employs a particular byte value, typically zero, to serve as a packet delimiter (a special value that indicates the boundary between packets) [**...**](http://en.wikipedia.org/wiki/ConsisteConsistent_Overhead_Byte_Stuffing)
