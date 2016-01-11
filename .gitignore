@@ -1,0 +1,8 @@
+*.dll
+*.pdb
+*.orig
+*.csproj
+*.cache
+*.txt
+*.xml
+Consistent Overhead Byte Stuffing/Properties/AssemblyInfo.cs
