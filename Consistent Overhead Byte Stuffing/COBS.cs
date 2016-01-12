@@ -86,7 +86,7 @@ namespace Consistent_Overhead_Byte_Stuffing {
 			if (Input == null)
 				return null;
 
-			if (Input.Count() > 254)
+			if (Input.Count() > 255)
 				throw new ArgumentOutOfRangeException("Input length must not exceed 254 bytes");
 
 			var input = Input.ToArray();
@@ -100,7 +100,7 @@ namespace Consistent_Overhead_Byte_Stuffing {
 				distance = input[distanceIndex];
 
 				// Ensure the input is formatted correctly (distanceIndex + distance)
-				if (input.Length < distanceIndex + distance) {
+				if (input.Length < distanceIndex + distance || distance < 1) {
 					Trace.WriteLine("Consistent Overhead Byte Stuffing failed to parse an input.");
 					return new List<byte>();
 				}
